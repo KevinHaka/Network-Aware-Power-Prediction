@@ -102,35 +102,7 @@ For responsible deployment, model predictions should support rather than replace
 
 Possible extensions include:
 
-- Evaluate the workflow on real utility outage and topology data.
 - Use repeated stratified cross-validation instead of one train-test split.
 - Tune the classification threshold to reduce costly false negatives.
-- Compare logistic regression with Random Forest, XGBoost, SVM, or graph-based models.
-- Add additional network features such as betweenness centrality, closeness centrality, and community membership.
-- Investigate temporal network features and changing load conditions.
-- Quantify uncertainty and provide confidence intervals for model performance.
-- Test whether the model generalises to new network topologies and geographic regions.
-
-## Repository Contents
-
-- `Network Aware Power Prediction.ipynb`: Main analysis notebook.
-- `Network Aware Power Prediction.html`: HTML export of the notebook.
-- `Network Aware Power Prediction.pdf`: PDF report/export.
-- `Synthetic_Power_Data_Construction.pdf`: Documentation about the construction of the synthetic power data.
-- `CM_with_and_without_network_features.png`: Confusion-matrix comparison.
-- `network_and_lcc_degree_diagram.png`: Network and local-feature visualisation.
-- `bar_and_box_plot.png`: Exploratory data analysis plots.
-
-## How to Run
-
-1. Open `Network Aware Power Prediction.ipynb` in Jupyter Notebook, JupyterLab, or Google Colab.
-2. Run the cells from top to bottom.
-3. If the online data source is unavailable, place `power_substations.csv` and `power_links.csv` in the same directory as the notebook.
-
-The notebook uses Python and common data-science libraries, including:
-
-- `pandas`
-- `numpy`
-- `matplotlib`
-- `networkx`
-- `scikit-learn`
+- Compare logistic regression with Random Forest, XGBoost, or SVM.
+- Add additional network features such as betweenness centrality or/and closeness centrality.
